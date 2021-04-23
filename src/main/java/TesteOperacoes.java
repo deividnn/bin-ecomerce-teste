@@ -141,7 +141,7 @@ public class TesteOperacoes {
                 xml,
                 "utf8");
 
-        HttpResponse response = configurarConexao(xml);
+        HttpResponse response = criarConexaoProcessarXml(xml);
         System.out.println("status:" + response.getStatusLine().getStatusCode());
         System.out.println("pedido:" + pedido);
         System.out.println("total:" + total);
@@ -265,7 +265,7 @@ public class TesteOperacoes {
                 xml,
                 "utf8");
 
-        HttpResponse response = configurarConexao(xml);
+        HttpResponse response = criarConexaoProcessarXml(xml);
         System.out.println("status:" + response.getStatusLine().getStatusCode());
         System.out.println("pedido:" + pedido);
         System.out.println("tdate:" + tdate);
@@ -387,7 +387,7 @@ public class TesteOperacoes {
                 xml,
                 "utf8");
 
-        HttpResponse response = configurarConexao(xml);
+        HttpResponse response = criarConexaoProcessarXml(xml);
         System.out.println("status:" + response.getStatusLine().getStatusCode());
         System.out.println("periodo:" + datainicio + " - " + datafim);
         if (response.getStatusLine().getStatusCode() == 200) {
@@ -515,7 +515,7 @@ public class TesteOperacoes {
                 xml,
                 "utf8");
 
-        HttpResponse response = configurarConexao(xml);
+        HttpResponse response = criarConexaoProcessarXml(xml);
         System.out.println("status:" + response.getStatusLine().getStatusCode());
         System.out.println("pedido:" + pedido);
         if (response.getStatusLine().getStatusCode() == 200) {
@@ -669,7 +669,7 @@ public class TesteOperacoes {
                 xml,
                 "utf8");
 
-        HttpResponse response = configurarConexao(xml);
+        HttpResponse response = criarConexaoProcessarXml(xml);
         System.out.println("status:" + response.getStatusLine().getStatusCode());
         System.out.println("cartao:" + numeroCartao);
         System.out.println("validade cartao:" + mesValidade + "/" + anoValidade);
@@ -755,7 +755,7 @@ public class TesteOperacoes {
      * @throws IOException
      * @throws CertificateException
      */
-    private static HttpResponse configurarConexao(String xml) throws NoSuchAlgorithmException, UnsupportedEncodingException, KeyManagementException, UnrecoverableKeyException, KeyStoreException, IOException, CertificateException {
+    private static HttpResponse criarConexaoProcessarXml(String xml) throws NoSuchAlgorithmException, UnsupportedEncodingException, KeyManagementException, UnrecoverableKeyException, KeyStoreException, IOException, CertificateException {
         String keyPassphrase = senhaCertificado;
         KeyStore keyStore = KeyStore.getInstance("JKS");
         keyStore.load(new FileInputStream(arquivoJks), keyPassphrase.toCharArray());

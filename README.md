@@ -1,1 +1,1 @@
-# Teste de integracao da api Bin E-commerce
+# Teste de integracao da Web Service API -  Bin E-commerce

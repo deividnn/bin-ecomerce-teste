@@ -74,10 +74,10 @@ public class TesteOperacoes {
             vendaComCartaoDeCredito("5105---5617---9411---8996", "04", "26", "123", "30.05", pedido, false, "", "");
             //
             //venda cartao de credito parcelado sem juros
-            // vendaComCartaoDeCredito("5485---7392---3885---8589", "04", "26", "123", "200.00", "pedido-" + Calendar.getInstance().getTimeInMillis(), true, "3", "no");
+            //vendaComCartaoDeCredito("5485---7392---3885---8589", "04", "26", "123", "200.00", "pedido-" + Calendar.getInstance().getTimeInMillis(), true, "3", "no");
             //
             //venda cartao de credito parcelado com juros juros
-            // vendaComCartaoDeCredito("5148---6800---0000---0019", "04", "26", "123", "150.05", "pedido-" + Calendar.getInstance().getTimeInMillis(), true, "6", "yes");
+            //vendaComCartaoDeCredito("5148---6800---0000---0019", "04", "26", "123", "150.05", "pedido-" + Calendar.getInstance().getTimeInMillis(), true, "6", "yes");
             //
             //cancela pedido no mesmo dia
             //cancelarPedidoMesmoDia("pedido-1619199390111", "1619199393");
@@ -89,7 +89,7 @@ public class TesteOperacoes {
             //cancelarPedidoDiaPosterior(pedido, "30.05");
             //
             //obter pedido dentro de um intervalo
-            // consultarPedidosPorPeriodo("2021-04-05T10:23:37.143+02:00", "2021-05-05T10:23:37.143+02:00");
+            //consultarPedidosPorPeriodo("2021-04-05T10:23:37.143+02:00", "2021-05-05T10:23:37.143+02:00");
             //
         } catch (Exception e) {
             e.printStackTrace();
